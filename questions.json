@@ -1,0 +1,315 @@
+[
+    {
+      "id": 1,
+      "question": "Los documentos de tráfico marítimo se denominan:",
+      "options": ["Airwaybill", "Bill of lading", "Carta de porte", "Talón de embarque"],
+      "answer": "Bill of lading"
+    },
+    {
+      "id": 2,
+      "question": "El organismo que tiene la misión de fomentar la creación, el crecimiento y consolidación de las empresas es:",
+      "options": ["COFIDES", "ENISA", "CESCE", "ICO"],
+      "answer": "ENISA"
+    },
+    {
+      "id": 3,
+      "question": "Cuando se permite exportar una cantidad de producto sin reducción arancelaria pero por cantidad determinada de producto, hablamos de:",
+      "options": ["La cantidad de producto para exportar o importar nunca puede limitarse por las reglas del libre comercio", "Contingentes cuantitativos", "Contingentes arancelarios", "No existe ningún límite por cantidad de producto sino que siempre se dan reducciones arancelarias en el tributo que se paga"],
+      "answer": "Contingentes cuantitativos"
+    },
+    {
+      "id": 4,
+      "question": "Si el gobierno de un país impone un contingente a la importación:",
+      "options": ["La oferta del producto cae porque sólo se consume el producto nacional y se produce un exceso de demanda que da lugar a una subida en los precios", "La oferta del producto sube porque se consume sólo el producto nacional y se produce un exceso de demanda que da lugar a una bajada en los precios", "La oferta del producto se queda igual por las reservas de mercancías", "La oferta del producto baja porque se consume sólo el producto nacional"],
+      "answer": "La oferta del producto cae porque sólo se consume el producto nacional y se produce un exceso de demanda que da lugar a una subida en los precios"
+    },
+    {
+      "id": 5,
+      "question": "La Cámara de Comercio Internacional es:",
+      "options": ["Una organización gubernamental y órgano consultivo privilegiado ante la ONU", "Una organización gubernamental y órgano consultivo de más alto nivel ante la OIT", "Una organización empresarial sin personalidad jurídica propia", "Una organización empresarial y órgano consultivo de más alto nivel ante la ONU"],
+      "answer": "Una organización empresarial y órgano consultivo de más alto nivel ante la ONU"
+    },
+    {
+      "id": 6,
+      "question": "A la acción llevada a cabo por una unidad independiente de las partes interesadas con la finalidad de determinar que los productos, procesos, servicios u organización cumplen con los requisitos establecidos en las normas o especificaciones técnicas, se denomina:",
+      "options": ["Certificación", "Normalización", "Homologación", "Ninguna de las anteriores"],
+      "answer": "Certificación"
+    },
+    {
+      "id": 7,
+      "question": "Las operaciones intracomunitarias:",
+      "options": ["Se trata de entradas y salidas de mercancías entre los países de la Unión Europea salvo supuestos excepcionales", "Se realizan siempre entre estados miembros sin excepción", "Se trata de entradas y salidas de mercancías a países distintos de la Unión Europea", "Se trata de entradas y salidas de mercancías entre todos los países de la Unión Europea"],
+      "answer": "Se trata de entradas y salidas de mercancías entre los países de la Unión Europea salvo supuestos excepcionales"
+    },
+    {
+      "id": 8,
+      "question": "Los archivos clasificados según su manejo o uso no incluyen:",
+      "options": ["Los activos o de trámite", "Los descentralizados", "Los semiactivos", "Los de depósito"],
+      "answer": "Los descentralizados"
+    },
+    {
+      "id": 9,
+      "question": "En los criterios de organización de los archivos según la ordenación cronológica se sigue, generalmente, el proceso:",
+      "options": ["Año/mes/día y van desde la fecha más reciente a la más remota", "Año/mes/día y van desde la fecha más remota a la más reciente", "Día/mes/año y van desde la fecha más remota a la más reciente", "Día/mes/año y van desde la fecha más reciente a la más remota"],
+      "answer": "Año/mes/día y van desde la fecha más reciente a la más remota"
+    },
+    {
+      "id": 10,
+      "question": "Los requisitos que deben cumplir las medidas antidumping son:",
+      "options": ["Que las importaciones están siendo objeto de dumping", "Demostrar que la situación económica se ha deteriorado a través del examen de factores económicos relevantes", "Que el perjuicio económico lo estén causando las importaciones y no otros factores", "Todas las respuestas son correctas"],
+      "answer": "Todas las respuestas son correctas"
+    },
+    {
+      "id": 11,
+      "question": "El tipo de sistema de información en Internet que se conceptúa como página de enlaces donde el usuario de Internet da de alta su página web y puede acceder a otras páginas web se denomina:",
+      "options": ["FFA", "Directorio", "Buscadores", "Directorio Mixto"],
+      "answer": "FFA"
+    },
+    {
+      "id": 12,
+      "question": "El criterio de clasificación que se usa para los archivos informáticos es:",
+      "options": ["Por su forma", "Por el lugar de almacenamiento", "Por su importancia", "Ninguno de los anteriores"],
+      "answer": "Por su forma"
+    },
+    {
+      "id": 13,
+      "question": "Por su privacidad, los archivos pueden ser:",
+      "options": ["Personales, departamentales y generales", "Activos, semiactivos y pasivos", "Centralizados y descentralizados", "Principales y secundarios"],
+      "answer": "Personales, departamentales y generales"
+    },
+    {
+      "id": 14,
+      "question": "Para que un acto sea mercantil debe cumplir las siguientes características:",
+      "options": ["Debe ser habitual y especulativo", "Debe no ser un acto aislado y su finalidad es obtener beneficios", "Lo más importante es obtener una rentabilidad", "Debe ser un acto no aislado, cuya finalidad sea obtener beneficios y que den rentabilidad"],
+      "answer": "Debe ser un acto no aislado, cuya finalidad sea obtener beneficios y que den rentabilidad"
+    },
+    {
+      "id": 15,
+      "question": "Entre las obligaciones generales para el comprador y el vendedor en el contrato de compraventa están:",
+      "options": ["Conservar las mercaderías", "Conservar las mercaderías y pagar intereses", "No cumplir cuando hay fuerza mayor", "Obligación de conservar las mercaderías, abono de intereses y no cumplir en determinados supuestos"],
+      "answer": "Obligación de conservar las mercaderías, abono de intereses y no cumplir en determinados supuestos"
+    },
+    {
+      "id": 16,
+      "question": "Los medios de pago admitidos internacionalmente pueden ser:",
+      "options": ["Al contado", "Por adelantado", "Por remesa documentaria", "Todas son correctas"],
+      "answer": "Todas son correctas"
+    },
+    {
+      "id": 17,
+      "question": "Para elaborar la oferta comercial:",
+      "options": ["Partimos de una investigación amplia de las cuestiones específicas del cliente y la acompañamos con una carta de transmisión", "Sólo necesitamos una investigación amplia de las cuestiones que interesan al cliente", "Con el listado de precios es suficiente, porque es lo que interesa en la compraventa", "La carta de transmisión no existe"],
+      "answer": "Partimos de una investigación amplia de las cuestiones específicas del cliente y la acompañamos con una carta de transmisión"
+    },
+    {
+      "id": 18,
+      "question": "La negociación:",
+      "options": ["Es un proceso", "La negligencia es su peor enemigo", "Es uno de los aspectos más importantes de la globalización", "Todas son correctas"],
+      "answer": "Todas son correctas"
+    },
+    {
+      "id": 19,
+      "question": "En que grupo de Incoterms el vendedor lo tiene todo incluido:",
+      "options": ["E", "F", "C", "D"],
+      "answer": "D"
+    },
+    {
+      "id": 20,
+      "question": "En la tarifa de precios:",
+      "options": ["Su presentación en el proceso comercial es elemento clave en la relación comercial", "Es un documento", "Los conceptos deben ser inteligibles, comprensibles y precisos", "Son todas correctas"],
+      "answer": "Son todas correctas"
+    },
+    {
+      "id": 21,
+      "question": "La cotización internacional es el resultado de la formación del precio y tiene como base:",
+      "options": ["Los costos y gastos de la empresa", "Los gastos asociados a la exportación", "El margen de beneficio que se pretende alcanzar", "Todas son correctas"],
+      "answer": "Todas son correctas"
+    },
+    {
+      "id": 22,
+      "question": "¿Qué es el comercio electrónico?",
+      "options": ["Una forma de realizar transacciones comerciales a través de Internet", "Una forma de realizar transacciones comerciales en tiendas físicas", "Una forma de realizar transacciones comerciales por teléfono", "Ninguna de las anteriores"],
+      "answer": "Una forma de realizar transacciones comerciales a través de Internet"
+    },
+    {
+      "id": 23,
+      "question": "¿Cuál de los siguientes no es un tipo de comercio electrónico?",
+      "options": ["B2G (Business to Government)", "B2B (Business to Business)", "B2C (Business to Consumer)", "C2C (Consumer to Consumer)"],
+      "answer": "B2G (Business to Government)"
+    },
+    {
+      "id": 24,
+      "question": "¿Qué significa SEO en el contexto del marketing digital?",
+      "options": ["Search Engine Optimization", "Social Engine Optimization", "Search Email Optimization", "Social Email Optimization"],
+      "answer": "Search Engine Optimization"
+    },
+    {
+      "id": 25,
+      "question": "¿Qué se necesita para realizar una exportación?",
+      "options": ["Contar con los recursos necesarios y cumplir con los requisitos legales", "Conocer el idioma del país de destino", "Establecer relaciones diplomáticas con el país de destino", "Ninguna de las anteriores"],
+      "answer": "Contar con los recursos necesarios y cumplir con los requisitos legales"
+    },
+    {
+      "id": 26,
+      "question": "¿Cuál es el documento principal para la exportación?",
+      "options": ["Factura comercial", "Certificado de origen", "Lista de empaque", "Conocimiento de embarque"],
+      "answer": "Factura comercial"
+    },
+    {
+      "id": 27,
+      "question": "¿Qué tipo de transporte es el más adecuado para mercancías de alto valor y urgentes?",
+      "options": ["Transporte aéreo", "Transporte marítimo", "Transporte terrestre", "Transporte ferroviario"],
+      "answer": "Transporte aéreo"
+    },
+    {
+      "id": 28,
+      "question": "¿Qué es un arancel?",
+      "options": ["Un impuesto sobre las importaciones o exportaciones de bienes", "Un certificado necesario para exportar", "Un documento de transporte", "Una licencia para operar"],
+      "answer": "Un impuesto sobre las importaciones o exportaciones de bienes"
+    },
+    {
+      "id": 29,
+      "question": "El comercio al por mayor o mayorista es la primera fase de una actividad comercial:",
+      "options": ["Verdadero", "Falso"],
+      "answer": "Verdadero"
+    },
+    {
+      "id": 30,
+      "question": "Las empresas mayoristas compran mercancías a los productores para posteriormente vendérselas a los comerciantes minoristas:",
+      "options": ["Verdadero", "Falso"],
+      "answer": "Verdadero"
+    },
+    {
+      "id": 31,
+      "question": "¿Cómo se denomina al intercambio comercial de un país con relación a otro?",
+      "options": ["Comercio internacional", "Comercio exterior", "Comercio global"],
+      "answer": "Comercio exterior"
+    },
+    {
+      "id": 32,
+      "question": "La diferencia entre el valor de lo que un país vende y lo que compra al exterior se denomina:",
+      "options": ["Balanza de pagos", "Balanza comercial", "Agrupaciones comerciales"],
+      "answer": "Balanza comercial"
+    },
+    {
+      "id": 33,
+      "question": "Las barreras son unas exenciones de los derechos de importación o exportación para unas determinadas mercancías que normalmente estarían sujetas a derechos de arancel:",
+      "options": ["Verdadero", "Falso"],
+      "answer": "Falso"
+    },
+    {
+      "id": 34,
+      "question": "Los obstáculos técnicos al comercio son aquellos derivados de la aplicación de medidas de normalización, entendiéndose como estas últimas a las normas, reglamentos técnicos, y los procedimientos para la evaluación de la conformidad:",
+      "options": ["Verdadero", "Falso"],
+      "answer": "Verdadero"
+    },
+    {
+      "id": 35,
+      "question": "Hablamos de Comercio exterior para referirnos a la actividad económica que se produce entre los habitantes de un mismo territorio nacional:",
+      "options": ["Verdadero", "Falso"],
+      "answer": "Falso"
+    },
+    {
+      "id": 36,
+      "question": "El término hace referencia al intercambio comercial de un país con relación a los demás, es decir, si tomamos como referencia a España, el de España es aquel que este país realiza con las diferentes naciones:",
+      "options": ["Comercio exterior", "Comercio internacional", "Comercio interior"],
+      "answer": "Comercio exterior"
+    },
+    {
+      "id": 37,
+      "question": "El término es un concepto más amplio, pues abarca el flujo de relaciones comerciales internacionales, sin hacer referencia a un país en específico:",
+      "options": ["Comercio internacional", "Comercio exterior", "Comercio interno"],
+      "answer": "Comercio internacional"
+    },
+    {
+      "id": 38,
+      "question": "La balanza de pagos define el estado de intercambios de un país. Se compone de varias balanzas, como la comercial, la de servicios y la de capitales y transferencias:",
+      "options": ["Verdadero", "Falso"],
+      "answer": "Verdadero"
+    },
+    {
+      "id": 39,
+      "question": "Son los impuestos que deben pagar en un país los importadores y exportadores en las aduanas por la entrada o salida de las mercancías:",
+      "options": ["Impuesto de aduana", "Barreras arancelarias", "Impuesto sobre las mercancías"],
+      "answer": "Impuesto de aduana"
+    },
+    {
+      "id": 40,
+      "question": "Funciones más importantes que llevan a cabo los aduanas (Respuesta múltiple):",
+      "options": ["Aplica las normas recogidas por los regímenes de comercio del resto de países", "Comprueba de forma física, cuantitativa y cualitativa las mercancías que entran o salen por la Aduana", "Recauda los impuestos y las tasas de las mercancías"],
+      "answer": "Aplica las normas recogidas por los regímenes de comercio del resto de países, Comprueba de forma física, cuantitativa y cualitativa las mercancías que entran o salen por la Aduana, Recauda los impuestos y las tasas de las mercancías"
+    },
+    {
+      "id": 41,
+      "question": "La se puede definir como el acuerdo de voluntades que se celebra entre partes domiciliadas en países diferentes, por lo que se transfiere la propiedad de mercancías que serán transportadas de un territorio a otro, teniendo en cuenta la realización del pago de un precio estipulado:",
+      "options": ["Compraventa", "Venta", "Compra"],
+      "answer": "Compraventa"
+    },
+    {
+      "id": 42,
+      "question": "El precio y las condiciones de pago. El precio debe ser determinado o determinable. Se debe especificar claramente, haciendo constar la moneda que se va a utilizar, el plazo para el pago, la forma de pago y el medio de pago:",
+      "options": ["Verdadero", "Falso"],
+      "answer": "Verdadero"
+    },
+    {
+      "id": 43,
+      "question": "¿Qué aspectos determina Incoterms en un contrato de compraventa? Selecciona las respuestas correctas:",
+      "options": ["Alcance del precio", "Momento y lugar en el que se produce la transferencia de riesgos sobre la mercancía objeto del contrato", "La cantidad total de producción"],
+      "answer": "Alcance del precio, Momento y lugar en el que se produce la transferencia de riesgos sobre la mercancía objeto del contrato"
+    },
+    {
+      "id": 44,
+      "question": "La finalidad de los contratos de compraventa es establecer un conjunto de reglas internacionales para la interpretación de los términos más utilizados en el comercio internacional:",
+      "options": ["Verdadero", "Falso"],
+      "answer": "Verdadero"
+    },
+    {
+      "id": 45,
+      "question": "Los Incoterms sólo son utilizables en el transporte por mar y vías navegables interiores:",
+      "options": ["Marítimos", "Terrestre", "Polivalentes"],
+      "answer": "Marítimos"
+    },
+    {
+      "id": 46,
+      "question": "Cualquier venta que se realice es un proceso, por ello hablamos de una serie de pasos que tiene que completar cualquier acción comercial para ser completa. Puesto que estamos ante un proceso de venta:",
+      "options": ["Verdadero", "Falso"],
+      "answer": "Verdadero"
+    },
+    {
+      "id": 47,
+      "question": "La es el proceso para llegar a una mutua satisfacción de dos o más partes a través de una acción de comunicación, donde cada parte hace una propuesta inicial y recibe una contrapropuesta, con el intento de aproximarse al punto de equilibrio de ambas ofertas:",
+      "options": ["Negociación", "Contrato", "Acuerdo"],
+      "answer": "Negociación"
+    },
+    {
+      "id": 48,
+      "question": "Los documentos comerciales son los representativos de los productos o servicios exportados:",
+      "options": ["Verdadero", "Falso"],
+      "answer": "Verdadero"
+    },
+    {
+      "id": 49,
+      "question": "¿Qué es la Balanza de Pagos?",
+      "options": ["Un documento contable que registra las transacciones económicas de un país en un período de tiempo", "El saldo entre exportaciones e importaciones de bienes y servicios", "La diferencia entre ingresos y gastos del gobierno"],
+      "answer": "Un documento contable que registra las transacciones económicas de un país en un período de tiempo"
+    },
+    {
+      "id": 50,
+      "question": "En la negociación internacional:",
+      "options": ["Si se da alguna variación en la negociación internacional con respecto a la nacional es por el entorno económico exclusivamente", "A la hora de llevar a cabo una negociación internacional hay que tener en cuenta otros factores distintos de los establecido en la letra a", "A la hora de llevar a cabo una negociación internacional hay que tener en cuenta también otros factores distintos de los establecido en la letra a"],
+      "answer": "A la hora de llevar a cabo una negociación internacional hay que tener en cuenta también otros factores distintos de los establecido en la letra a"
+    },
+    {
+      "id": 51,
+      "question": "Los Incoterms:",
+      "options": ["Regula los tres grandes problemas que comporta toda transacción comercial", "Su finalidad es establecer reglas internacionales para interpretar términos", "No regula los trámites documentales sino de transmisión de riesgos y distribución de gastos", "Son reglas obligatorias"],
+      "answer": "Su finalidad es establecer reglas internacionales para interpretar términos"
+    },
+    {
+      "id": 52,
+      "question": "El Instituto Español de Comercio Exterior pone a nuestro servicio:",
+      "options": ["Herramientas para analizar el potencial exportador de las empresas para comprobar su potencial y sus puntos débiles y fuertes, conocer las claves de la operativa del comercio exterior y realizar simulaciones, así como la posibilidad de obtención de apoyos de la Administración a la internacionalización, informa de los trámites necesarios y documentos básicos para realizar las operaciones comerciales y elabora planes de iniciación y consolidación internacional.", "Herramientas para implantarse e invertir en el extranjero a través de la identificación de oportunidades de negocios, calculando los costes de implantación de nuestra empresa en cualquier mercado a través de un simulador de costes, ofrece una base de datos para conocer la evolución de las inversiones y organiza foros a fin de seleccionar posibles socios locales.", "Ambas respuestas son correctas"],
+      "answer": "Ambas respuestas son correctas"
+    }
+  ]
+  
