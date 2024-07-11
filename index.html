@@ -10,8 +10,10 @@
 <div class="container">
   <div id="question-container" class="question"></div>
   <div id="options-container" class="options"></div>
+  <div id="question-selector" class="selector"></div>
   <button id="next-question" class="btn">Siguiente pregunta</button>
-  <button id="retry-button" class="btn" onclick="restartQuiz()">Reintentar</button>
+  <button id="retry-button" class="btn" onclick="restartQuiz()">Reiniciar</button>
+  <button id="result-button" class="btn" style="display: none;" onclick="showResult()">Ver Resultado</button>
   <div id="result"></div>
 </div>
 <script src="script.js"></script>
