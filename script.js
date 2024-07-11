@@ -11,7 +11,6 @@ fetch('questions.json')
   .then(data => {
     questions = data;
     console.log('Preguntas cargadas:', questions); // Mensaje de depuración
-    shuffleArray(questions);
     displayQuestion();
     createQuestionSelector();
   })
@@ -35,6 +34,9 @@ const nextButton = document.getElementById('next-question');
 const retryButton = document.getElementById('retry-button');
 const resultButton = document.getElementById('result-button');
 const selectorContainer = document.getElementById('question-selector');
+const quizContainer = document.getElementById('quiz-container');
+const finalResultContainer = document.getElementById('final-result-container');
+const finalResultDisplay = document.getElementById('final-result');
 
 function displayQuestion() {
   if (questions.length === 0) {
@@ -52,7 +54,7 @@ function displayQuestion() {
     if (currentQuestion.multiple) {
       button.addEventListener('click', () => toggleOption(button, option));
     } else {
-      button.addEventListener('click', () => checkAnswer(option));
+      button.addEventListener('click', () => checkAnswer(option, button));
     }
     optionsContainer.appendChild(button);
   });
@@ -66,16 +68,45 @@ function toggleOption(button, option) {
     selectedOptions.push(option);
     button.style.backgroundColor = '#d3d3d3'; // Marcar la opción seleccionada
   }
+
+  // Verificar si todas las opciones correctas están seleccionadas
+  const currentQuestion = questions[currentQuestionIndex];
+  if (currentQuestion.multiple) {
+    const correctOptions = currentQuestion.answer;
+    const allCorrectSelected = correctOptions.every(opt => selectedOptions.includes(opt));
+    const anyIncorrectSelected = selectedOptions.some(opt => !correctOptions.includes(opt));
+    if (allCorrectSelected || anyIncorrectSelected) {
+      checkMultipleAnswer(currentQuestion);
+    }
+  }
 }
 
-function checkAnswer(selected) {
+function checkAnswer(selected, button) {
   const currentQuestion = questions[currentQuestionIndex];
-  let correct;
   if (currentQuestion.multiple) {
-    correct = JSON.stringify(selectedOptions.sort()) === JSON.stringify(currentQuestion.answer.sort());
+    checkMultipleAnswer(currentQuestion);
   } else {
-    correct = currentQuestion.answer === selected;
+    checkSingleAnswer(selected, button, currentQuestion);
   }
+}
+
+function checkSingleAnswer(selected, button, currentQuestion) {
+  let correct = currentQuestion.answer === selected;
+
+  const optionButtons = document.querySelectorAll('.option');
+  optionButtons.forEach(btn => {
+    if (btn.textContent === currentQuestion.answer) {
+      if (correct) {
+        btn.classList.add('correct');
+      } else {
+        btn.classList.add('correct-border');
+      }
+    } else if (btn === button && !correct) {
+      btn.classList.add('incorrect');
+    } else {
+      btn.classList.add('neutral');
+    }
+  });
 
   if (correct) {
     score++;
@@ -91,6 +122,40 @@ function checkAnswer(selected) {
   disableOptions();
 }
 
+function checkMultipleAnswer(currentQuestion) {
+  const correctOptions = currentQuestion.answer;
+  const allCorrectSelected = correctOptions.every(option => selectedOptions.includes(option));
+  const anyIncorrectSelected = selectedOptions.some(option => !correctOptions.includes(option));
+
+  const optionButtons = document.querySelectorAll('.option');
+  optionButtons.forEach(btn => {
+    if (correctOptions.includes(btn.textContent)) {
+      if (allCorrectSelected && !anyIncorrectSelected) {
+        btn.classList.add('correct');
+      } else {
+        btn.classList.add('correct-border');
+      }
+    } else if (selectedOptions.includes(btn.textContent)) {
+      btn.classList.add('incorrect');
+    } else {
+      btn.classList.add('neutral');
+    }
+  });
+
+  if (allCorrectSelected && !anyIncorrectSelected) {
+    score++;
+    resultDisplay.textContent = '¡Correcto!';
+    resultDisplay.style.color = 'green';
+    markQuestionAsResponded(currentQuestionIndex, true);
+  } else if (anyIncorrectSelected) {
+    resultDisplay.textContent = `Incorrecto. Seleccionaste una opción incorrecta.`;
+    resultDisplay.style.color = 'red';
+    markQuestionAsResponded(currentQuestionIndex, false);
+  }
+  nextButton.style.display = 'block';
+  disableOptions();
+}
+
 function disableOptions() {
   const optionButtons = document.querySelectorAll('.option');
   optionButtons.forEach(button => {
@@ -99,19 +164,18 @@ function disableOptions() {
 }
 
 nextButton.addEventListener('click', () => {
-  currentQuestionIndex++;
-  if (currentQuestionIndex < questions.length) {
-    displayQuestion();
-    resultDisplay.textContent = '';
-    nextButton.style.display = 'none';
+  if (currentQuestionIndex < questions.length - 1) {
+    currentQuestionIndex++;
   } else {
-    showResult();
+    currentQuestionIndex = getFirstUnansweredQuestion();
   }
+  displayQuestion();
+  resultDisplay.textContent = '';
+  nextButton.style.display = 'none';
   updateResultButtonVisibility();
 });
 
 function restartQuiz() {
-  shuffleArray(questions);
   currentQuestionIndex = 0;
   score = 0;
   respondedQuestions.clear();
@@ -120,17 +184,27 @@ function restartQuiz() {
   retryButton.style.display = 'none';
   nextButton.style.display = 'none';
   resultButton.style.display = 'none';
+  finalResultContainer.classList.add('hidden');
+  quizContainer.classList.remove('hidden');
   updateQuestionSelector();
 }
 
 function createQuestionSelector() {
   selectorContainer.innerHTML = '';
-  questions.forEach((_, index) => {
+  questions.forEach((question) => {
     const button = document.createElement('button');
-    button.textContent = index + 1;
+    button.textContent = question.id;
     button.classList.add('not-responded');
+    button.addEventListener('click', () => goToQuestion(question.id - 1));
     selectorContainer.appendChild(button);
   });
+}
+
+function goToQuestion(index) {
+  currentQuestionIndex = index;
+  displayQuestion();
+  resultDisplay.textContent = '';
+  nextButton.style.display = 'none';
 }
 
 function markQuestionAsResponded(index, isCorrect) {
@@ -159,20 +233,25 @@ function updateQuestionSelector() {
   });
 }
 
+function getFirstUnansweredQuestion() {
+  for (let i = 0; i < questions.length; i++) {
+    if (!respondedQuestions.has(i)) {
+      return i;
+    }
+  }
+  return 0; // Por seguridad, pero no debería llegar aquí si se llama correctamente
+}
+
 function updateResultButtonVisibility() {
   if (respondedQuestions.size === questions.length) {
-    resultButton.style.display = 'block';
-  } else {
-    resultButton.style.display = 'none';
+    showResult();
   }
 }
 
 function showResult() {
-  questionContainer.textContent = `Cuestionario completado. Tu puntuación es: ${score}/${questions.length}`;
-  optionsContainer.innerHTML = '';
-  nextButton.style.display = 'none';
-  retryButton.style.display = 'block';
-  resultButton.style.display = 'none';
+  quizContainer.classList.add('hidden');
+  finalResultContainer.classList.remove('hidden');
+  finalResultDisplay.textContent = `Cuestionario completado. Tu puntuación es: ${score}/${questions.length}`;
 }
 
 // Escuchar el evento de la tecla espacio para cambiar la pregunta

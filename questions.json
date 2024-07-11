@@ -277,7 +277,7 @@
       "question": "Funciones más importantes que llevan a cabo los aduanas (Respuesta múltiple):",
       "options": ["Aplica las normas recogidas por los regímenes de comercio del resto de países", "Comprueba de forma física, cuantitativa y cualitativa las mercancías que entran o salen por la Aduana", "Recauda los impuestos y las tasas de las mercancías"],
       "answer": ["Aplica las normas recogidas por los regímenes de comercio del resto de países", "Comprueba de forma física, cuantitativa y cualitativa las mercancías que entran o salen por la Aduana", "Recauda los impuestos y las tasas de las mercancías"],
-      "multiple": false
+      "multiple": true
     },
     {
       "id": 41,
