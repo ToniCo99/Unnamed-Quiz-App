@@ -298,7 +298,7 @@
       "question": "¿Qué aspectos determina Incoterms en un contrato de compraventa? Selecciona las respuestas correctas:",
       "options": ["Alcance del precio", "Momento y lugar en el que se produce la transferencia de riesgos sobre la mercancía objeto del contrato", "La cantidad total de producción"],
       "answer": ["Alcance del precio", "Momento y lugar en el que se produce la transferencia de riesgos sobre la mercancía objeto del contrato"],
-      "multiple": false
+      "multiple": true
     },
     {
       "id": 44,
