@@ -37,6 +37,7 @@ const selectorContainer = document.getElementById('question-selector');
 const quizContainer = document.getElementById('quiz-container');
 const finalResultContainer = document.getElementById('final-result-container');
 const finalResultDisplay = document.getElementById('final-result');
+const reviewButton = document.getElementById('review-button');
 
 function displayQuestion() {
   if (questions.length === 0) {
@@ -178,12 +179,12 @@ nextButton.addEventListener('click', () => {
 function restartQuiz() {
   currentQuestionIndex = 0;
   score = 0;
+  selectedOptions = [];
   respondedQuestions.clear();
   displayQuestion();
   resultDisplay.textContent = '';
   retryButton.style.display = 'none';
   nextButton.style.display = 'none';
-  resultButton.style.display = 'none';
   finalResultContainer.classList.add('hidden');
   quizContainer.classList.remove('hidden');
   updateQuestionSelector();
@@ -252,6 +253,24 @@ function showResult() {
   quizContainer.classList.add('hidden');
   finalResultContainer.classList.remove('hidden');
   finalResultDisplay.textContent = `Cuestionario completado. Tu puntuación es: ${score}/${questions.length}`;
+  reviewButton.style.display = 'block';
+}
+
+function reviewIncorrect() {
+  finalResultContainer.classList.add('hidden');
+  quizContainer.classList.remove('hidden');
+  let firstIncorrectQuestionIndex = -1;
+  respondedQuestions.forEach((isCorrect, index) => {
+    if (!isCorrect) {
+      if (firstIncorrectQuestionIndex === -1) {
+        firstIncorrectQuestionIndex = index;
+      }
+    }
+  });
+  if (firstIncorrectQuestionIndex !== -1) {
+    currentQuestionIndex = firstIncorrectQuestionIndex;
+    displayQuestion();
+  }
 }
 
 // Escuchar el evento de la tecla espacio para cambiar la pregunta
